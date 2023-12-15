@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Webpage</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+
+    <h1>VERSE OF THE DAY</h1>
+    <div id="verseInfo"></div>
+
+    <script>
+
+    // Function to fetch verse data and update the DOM
+    function getVerseData() {
+        // grabbing random verse
+        axios.get('verseAPI.php?random=true') 
+            .then(function (response) {
+                const verses = response.data;
+                verses.forEach(verse => {
+                    html = `<h3>${verse.book} ${verse.chapter}:${verse.verseNum} | ${verse.verse}</h3>`;
+                });
+                document.getElementById('verseInfo').innerHTML = html;
+            })
+            .catch(function (error) {
+                console.error("Error:", error);
+                console.log("NOPE");
+            });
+    }
+
+    getVerseData();
+
+    </script>
+
+
+
+
+<!-- simple footer -->
+<hr>
+<h2>Ⓒ Logan Wooldridge</h2>
+    
+</body>
+</html>

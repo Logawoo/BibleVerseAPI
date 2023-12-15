@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    background-color: grey;
+}
+
+h1 {
+    font-size: 5vh;
+    text-align: center;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+label {
+    font-size: 3vh;
+    text-align: center;
+}
+input {
+    font-size: 3vh;
+    background-color: white;
+}
+#button {
+    background-color:darkcyan;
+    text-align: center;
+}
+
+#edit-container {
+    text-align: center;
+}
+
+#add-container {
+    padding-top: 5vh;
+    text-align: center;
+}
+#btn1 {
+    margin-left: 1vh;
+    background-color: darkcyan;
+}
+
+#btn2 {
+    margin-top: 2vh;
+    padding: 2vh 3vh 2vh 3vh;
+    background-color: darkcyan;
+}
