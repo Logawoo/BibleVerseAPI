@@ -13,4 +13,4 @@ Example: http://localhost:3000/verseapi.php
 
 ## GitHub
 
-
+https://github.com/Logawoo/BibleVerseAPI
